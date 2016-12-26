@@ -1,0 +1,69 @@
+.cls1{
+   color:green;
+   font-style:italic;
+   text-decoration:underline;
+}
+.s1{
+   background-color:yellow;
+   font-weight:bold;
+   font-size:20px;
+   color:black;
+}
+
+
+/*id选择器的使用*/
+#id1{
+    background-color:silver;
+	font-size:30px;
+	color:black;
+}
+/*html选择器的优先级低于id和类选择器*/
+body{
+    color:orange;
+} 
+a:link{/*link设置没有被选择时的样式*/
+  color:black;
+  text-decoration:none;  /*这里的none将下划线去掉*/
+  font-size:24px;
+
+}
+a:hover{
+   text-decoration:underline;
+   font-size:40px;
+   color:blue;
+}
+a:visited{  /*使用ie打开以后，由于缓存的问题会造成打开一次以后，ie的缓存会使刷新之后也显示访问过后的字体样式，使用microsoft edge不会出现这种情况，可能是microsoft edge自动删除缓存了*/
+   color:green;
+}
+/*通配符选择器（可以用到所有的html文件 但是他的优先级是最低的）*/
+*{  /*margin定的是外边距比如div块距离页面的页边距
+      如果提供四个值，按照顺时针旋转定数值
+	  提供两个 第一个代表上下 第二个值代表左右
+	  一个值 指上右下左顺时针旋转全都一样
+	  如果有三个第一个表示上 第二个表示左右 第三个表示下*/
+   /* margin-top:0px;
+	margin-left:0px;*/
+	margin:0px;/*为了屏蔽不同浏览器的默认边距不同，有的默认2px 有的0px 可能不一样*/
+	padding:0px;
+}
+
+/*父子选择器 可以到多重子孙，但必须都是单线，且层不能出错*/
+#id1 span { /*1.父线 这表示在id算择器中有span子类，而这个格式就是对span进行约束。*/
+       color:red;
+	   font-style:italic; /*italic表示斜体*/
+}
+#id1 span span{ /*2. 孙线 只能对下来一条线，不能既走父，再走孙子*/
+      color:green;
+}
+
+/*对新闻1做一个特别的修饰*/
+#news_special{
+        color:red; /*由于id选择器的优先级高于class选择器，所以由id选择器重新定义的class选择器已定义的性将发生改变*/
+}
+/*小结：
+ id选择器在html文件中命名 在css文件中继续使用此命名，但是在其前面必须加上 #
+ class选择器在html中命名，在css中继续使用此命名，但是在其前面必须加上 .
+ html选择器不用重新命名，只需要在css文件中将需要修改的标签定义就行
+ *选择器暂定
+ */
+

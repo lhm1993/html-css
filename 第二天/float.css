@@ -1,0 +1,37 @@
+.div1{
+   width:150px;
+   height:100px;
+   border:1px solid blue;
+   background:pink;
+   margin-top:5px;
+   /*float:left;左浮动*/
+}
+
+.div2{
+   width:150px;
+   height:100px;
+   border:1px solid blue;
+   background:pink;
+   margin-top:5px;
+  float:left; /*左浮动*/
+}
+
+.div3{
+   width:150px;
+   height:100px;
+   border:1px solid blue;
+   background:pink;
+   margin-top:20px;
+   float:left;/*左浮动*/
+}
+/*如果要让这三个div都浮动，必须都设置上浮动，否则会出错*/
+
+.div4{
+   width:800px;
+   height:400px;/*去掉最大的div盒子的高度后，这里就可以自适应了*/
+   border:1px solid green;
+}
+/*id选择器，要求右浮动
+#special{
+    float:right;
+}*/

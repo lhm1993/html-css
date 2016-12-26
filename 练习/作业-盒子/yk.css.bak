@@ -1,0 +1,88 @@
+body{
+   margin:0 auto; /*居中*/
+}
+ .div1{ /*大盒子*/
+     border:2px solid blue;
+	 width:260px;
+	 height:409px;
+ }
+ .div1 span{ /*大标题*/
+      font-weight:bold;
+	  font-size:24px;
+	  font-family:华文仿宋;
+	  margin-left:5px;
+ }
+#id1,#id2,#id3{ /*小标题*/
+       font-weight:bold;
+	   font-size:16px;
+	   font-family:华文新魏;
+	  /* 
+	  margin-left:80px;  
+	  这种方法比较笨，但是也是可以用的
+	  */
+	   float:right;   /*这种方式也是可以的*/
+ }
+ .div1 img{ /*大图，这里的设计不好，img控制的盒子太大了*/
+     width:50px;
+	 height:50px;
+	 margin-left:20px;
+	 margin-right:15px;
+} 
+a{          /*去掉超链接的下划线*/
+   text-decoration:none;
+}
+
+.table1{  /*显示图片下面的文字和下面的小图*/
+	 
+      width:280px;
+	  font-size:12px;
+	  font-weight:bold;
+	  color:blue;
+	  margin-left:10px;
+ }
+ .table1 img{ /*使用父子选择器，设置小图的格式*/
+      width:20px;
+	  height:15px;
+ /*
+ 将之前在 div1 img中
+ 修改过的margin-left修改的参数重新定义
+ */
+	  margin-left:5px;      /*调整小图到文字的距离为5px*/
+}
+.cls1,.cls2,.cls3{/*三个小盒子*/
+    /*border:2px solid green;*/
+	/*
+	如果不指定cls盒子的宽度和高度
+    就会使图片挤在一起
+	*/
+	width:280px;
+	height:75px;
+	margin-top:0px;
+	padding-left:0px;   /*在IE中有一个默认的值，所以要清零之前放在.cls1 li 里面也是不行 cls1整个是个盒子 li在cls之中*/
+
+} 
+.cls1,.cls2,.cls3 li{ /*将三个class的标记点都去掉*/
+   
+     list-style-type:none;
+	/*
+	 float:left; 如果使用这种形式，
+	 只能改变最后有有一个cls3的浮动属性，
+	 所以，要使用下面这种形式，将他们分开写
+	 margin-top:3px;-->放在这里也是不行，不能将三个li全部控制
+	 */
+	  float:left;
+	 margin-top:3px;
+}  
+
+.cls1 li{  /*设置浮动*/
+	 float:left; 
+	 margin-top:3px;/*设置大图到cls盒子顶部的距离*/
+} 
+.cls2 li{ 
+	 float:left;
+	 margin-top:3px;
+}
+.cls3 li{ 
+	 float:left;  
+	 margin-top:3px;
+} 

@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>练习1</title>
+<link rel="stylesheet" type="text/css" href="demo1.css"/>
+</head>
+<body>
+<span class="s1">梁上英雄排行榜</span></br></br></br>
+<span class="s2">
+<span><a href=""target="_blank">宋江</a></span></br></br>
+<a href=""target="_blank">卢俊义</a></br></br>
+<a href=""target="_blank">吴用</a></br></br>
+<a href=""target="_blank">豹子头</a></br></br>
+<a href=""target="_blank">大刀关胜</a></br></br>
+<span>
+</body>
+</html>

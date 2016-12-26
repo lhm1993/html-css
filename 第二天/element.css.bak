@@ -1,0 +1,4 @@
+.s1{
+background-color:pink;
+display:block;  /*display中的block属性和inline属性可以重新定义类的块与行内显示方式，是内容按照指定的block或者inline来显示，以这种方式来改变布局*/
+}

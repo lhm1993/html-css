@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>css入门小案例</title>
+<!--引入css-->
+<link rel="stylesheet" type="text/css" href="my.css"/><!--ps：这里的href中可以是任何链接，href指的就是超链接。-->
+</head>
+<body>
+<div class="style"> <!--ps：div中可以放任何东西-->
+<img src="29.jpg"/>
+</div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<html>
+
+<head>
+<!--如何把css嵌入到html中 内连css-->
+<style type="text/css">
+    aimg{
+	     filter:gray;
+	 }
+</style>
+</head>
+<body>
+<A href><img src="demo3.1.jpg"/></a><!--将图片做成超链接的方式-->
+<img src="demo3.2.jpg"/>
+<img src="demo3.4.jpg"/>
+</body>
+</html>

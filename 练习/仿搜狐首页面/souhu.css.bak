@@ -1,0 +1,224 @@
+/*
+  1. 写一点测一点，包括颜色和尺寸
+  2. 时时刻刻设置float（浮动），不设置浮动会换行的
+  3. 每一个div都应该有一个正式的名字也就是注释，便于修改，
+     比如 logo的、ad的，然后在div中填写一些标记，方便之后编写。
+  4. border—left也是可以使用的，设置单边或者几边的边界。
+  5. 让中间的内容居中，使用text-align，可以使div中的内容左右居中。
+     如果垂直居中这个属性的话 可以使用表格来压，表格有垂直居中这个属性
+	 也可以使用margin来慢慢调。
+  6. 如果要使用table的话，必须使用form标签。
+  7. 使用按钮的情况：
+      background-color:#FFF; （白色）
+	  border-bottom:1px 1px 1px 1px;
+	  border-style:solid;
+	  border-color:#999;
+	  width:50px !important;
+	  width (这里有一个注释符，由于后面那半个注释符的缘故这里无法正常显示):52px;
+   8. 如果图片的alt不管用（在ie8之后就开始不能使用了），使用title即可，title是在各个版本中都可以使用的，但是title是在html文件中使用的，而不是在css文件中使用的。
+  ps：id选择器和类选择器的使用：
+      1） <div id="">
+	      <input class=""type=""/>
+		  <a class=""></a>
+		  </div>
+		  id选择器复用性比较低，优先级比较高，唯一使用，所以如果某个样式只给某一个html元素使用，则选择id选择器，如果一个样式是可能给多个元素使用，则应当使用class选择器。
+ */
+
+body{
+    margin:0 auto;   /*现将页面居中*/
+	border:1px solid red;
+	background:url('bg021.jpg');
+	/*background-position：100% -50px ;这种方式就是为了将一张图片的上下两部分别显示出来。*/
+
+}
+a:link{
+  text-decoration:none;/*去掉超链接的下划线*/
+  color:black;
+}
+a:hover{
+  text-decoration:underline;  /*悬停时加上超链接的下划线*/
+  color:orange;
+}
+a:visited{
+  color:gray;
+}
+
+  /*1.顶部*/
+
+.top{
+    width:1100px;  /*这里不能设置成占页面的百分比，否则，窗口缩小时，页面也会改变*/
+	height:30px;
+	border:1px solid yellow;
+	margin:0 auto;     /*设置居中*/  
+	/*margin-bottom:5px; */
+	background:#D4E9FF;
+	font-size:12px;
+}
+.top div{ 
+    margin-left:120px;  
+    float:left;
+}
+
+.top div span{
+    font-family:华文新魏;
+	font-size:25px;
+}
+.top div span span{
+    font-family:华文行楷;
+	font-size:25px;
+	color:red;
+}
+.top form{
+	margin-left:30px;
+    height:18px;
+	display:inline;  /*如果不设置在行内显示，就会造成form表单换行显示，结果就是跳出top div*/
+}
+.top div{
+    float:left;   /*让top中设置的两个div居中*/
+}
+.top div form input{
+    height:20px;
+	vertical-align:middle;  /*之前放在form中也是控制不住，在考虑盒子的问题上还是多有欠缺*/
+}
+#top1{
+     margin-left:100px;       /*设置手机看新闻的字体以及位置*/
+	 margin-top:7px;
+	 font-family:仿宋;
+}
+ 
+  /*2.top下面*/
+
+.news{
+     width:1100px;
+	 height:75.25px;
+	 margin:0 auto;
+	 border:1px solid blue;
+	/* margin-bottom:10px;*/
+	 background:white;
+}
+.news a{
+     float:left;
+}
+.faceul{     
+     width:945px;
+	 height:20px;
+	 border:1px solid yellow;
+     margin-left:10px;
+	 margin-top:0px;
+	 margin-bottom:3px;
+	 padding-left:5px;   
+	 /*
+	 对于盒子模型的理解，margin是对盒子外面的，
+	 而padding是对盒子里面的，之前将padding-left 放在.faceul li 里面分明是不对的。
+	 */
+	 float:left;
+	 background:#FFFCDF;
+}
+#id1{  /*单独控制第一行的背景颜色*/
+    background:#FFEA8F;
+}
+.faceul li{
+    list-style-type:none;
+	float:left;
+	margin-top:5px;
+	margin-right:35px;   /*这里使用的padding-right 所以在faceul的盒子边界上必然会留下35px的空格*/
+}
+
+/*3 top的下面的下面*/
+.media{
+     width:1100px;
+	 height:260px;
+	 margin:0 auto;
+	 border:1px solid blue;
+
+}
+.media div{
+     float:left;
+}
+.media1{
+     width:150px;
+	 height:100%;
+	 border:1px solid blue;
+}
+.faceul-1{
+     list-style-type:none;
+	 padding-left:0px;
+	 padding-top:0px;
+	 margin-top:0px;    /*faceul 在div中，所以用margin调距离*/
+}
+.faceul-1 li{
+     padding-top:0px;
+}
+.media2{
+     width:600px;
+	 height:100%;
+	 border:1px solid green;
+}
+.media3{
+     width:150px;
+	 height:100%;
+	 border:1px solid pink;
+}
+.media4{
+     width:192px;
+	 height:100%;
+	 border:1px solid green;
+}
+
+  /*4. 搜索框*/
+.search{
+     margin:0 AUTO;	
+     width:1100px;
+	 height:60px;
+	 background:#D4E9FF;
+	 border:1px solid BLUE;
+	 
+}
+.search a{
+    float:left;
+}
+.search div{  /*整体浮动*/
+    float:left;
+}
+.search span{  /*sg-logo*/
+     float:left;
+}
+.search select {   /*下拉菜单*/
+     width:60px;
+	 height:40px;
+	 opacity:0.9;
+	 margin-top:10px;
+	 margin-left:40px;
+	 font-size:18px;
+	 font-family:华文新魏;
+	 float:left;
+}
+#id2{           /*搜索框*/
+    width:50px;
+	height:40px;
+	margin-left:10px;
+	
+}
+.search input{  /*输入框*/
+     opacity:0.9;
+	 width:200px;
+	 height:35px;
+	 margin-top:10px;	
+	 display:inline;
+}
+/*推广产品栏*/
+.faceul-2{
+	width:480px;
+	border:1px solid red;
+	padding-left:5px;  /*调整内部距离小盒子边缘的距离*/
+	padding-top:5px;
+	margin-left:100px;
+	margin-top:10px;
+	margin-bottom:0px;  /*这里的margin 与bottom都有默认值，有小心*/
+	float:left;
+}
+.faceul-2 li{
+    list-style-type:none;
+	margin-left:30px;
+	float:left;
+}

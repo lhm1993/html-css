@@ -1,0 +1,57 @@
+.div1{
+   width:500px;
+   height:300px;
+   border:1px solid silver;
+
+}
+/*.div1 img{  
+
+这里注意，虽然img在ul 和li中包裹，
+但是使用div1 img父子选择器的时候，依然可以影响到img，
+这说明了一点，那就是在div中，他可以将包裹起来的任意
+一个标签使用父子选择器来控制，即，这些被包裹在div标签
+中的html标签在div看来是并列的。
+但是，测试时发现控制ul标签 与li标签时无法改变图片的大小，
+待解决？？
+
+   width:80px;
+   margin-top:10px;
+   margin-left:5px;
+}
+*/
+/*
+这里使用的faceul li img 父子选择器
+也可以对img里面的图片进行控制。
+代码： */
+
+}
+.faceul{
+    width:500px;
+	height:250px;
+	border:3px solid gray;
+	padding-left:0px;
+	margin-left:10px;
+	
+}
+.faceul li{
+    list-style-type:none; 
+	/*
+	list-style-type中的许多属性，
+	可以修改无序表前面的编号的类型 
+	none也在其中
+	*/
+	float:left;/*左浮动，都往左边去，排起来了就*/
+	width:50px;
+	height:80px;
+	border:1px solid red;  
+	/*
+	这里所采用的思路是，将每一个标签都可以看成是盒子模型
+	然后对标签就可以定义width等属性的参数，然后达到控制的目的。
+	*/
+	margin-right:5px;
+	margin-bottom:5px;
+}
+.faceul li img{
+   width:40px;
+   margin-top:10px;	
+   margin-left:5px;

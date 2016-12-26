@@ -1,0 +1,32 @@
+
+.s1{
+color:#FFB516;
+font-size:30px;
+}
+.s2{
+color:black;
+}
+.s2 span{
+color:blue;
+font-style:italic;
+}
+
+a:link{
+color:black;
+font-size:24px;
+text-decoration:none;
+font-family:华文新魏;
+}
+
+a:hover{
+text-decoration:underline;
+font-family:宋体;
+font-size:40px;
+color:green;
+}
+a:visited{
+color:gray;
+}
+a{ /*设置a的背景色都为silver*/
+background-color:silver;
+}

@@ -1,0 +1,25 @@
+/*把各个选择器的公共部分，单独拿出来，减少css的冗余*/
+/*招生广告*/
+.ad_stu{
+width:136px;
+background-color:#FC7E8C;
+}
+/*广告2*/
+.ad_2{
+background-color:#FC7E5C;
+}
+/*房地产广告*/
+.ad_house{
+height:152px;
+float:left;
+}
+
+/*将三个类选择器中相同的部分抽取出来
+1. 从哪里抽出来，还要将类的名称写上
+2.类名称之间用逗号隔开，如果不用逗号隔开就变成了父子选择器的形式了
+*/
+.ad_su,.ad_2,.ad_house{
+height:196px;
+float:left;
+margin:5px 0 0 6px;
+}

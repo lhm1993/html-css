@@ -1,0 +1,21 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="selector.css"/>
+</head>
+<body>
+<!--大的内容用div包起来，小的内容用span包起来就行了-->
+北京你好！<span class="s1" id="news_special">新闻1</span>
+<span class="s1">新闻一</span>
+<span class="s1">新闻二</span>
+<span class="cls1 s1 ">新闻三</span><!--1. 给新闻三再配备一个class选择器 也就是class选择器可以有的哟个，但是在html文件中一个标签中只能有一个class 而其赋值可以有多个，再css文件中，htmlclass赋值中以空格隔开的这些class属性要担负写出来，写法与第一个相同。2. class中的两个class类选择器的优先级不是有html文件中两个的顺序决定的，而是由css中的.s1{} 与.cls1{}的顺序来决定的-->
+<span class="s1">新闻四</span>
+<span class="s1">新闻五</span></br></br>
+<!--要对 非常重要这几个进行单独修改，那就应该现将这几个字包起来-->
+<span id="id1">这是一则<span>非常<span>重</span>要</span>的新闻！</span></br></br> <!--为了使用父子选择器，必须要将  重 字包起来，且将其包起来的标签的必须是现有的html认识的标签-->
+<!--控制超链接样式-->
+<a href="http://www.souhu.com" target="_blank">链接到搜狐</a></br>
+<a href="http://www.souhu.com" target="_blank">链接到搜狐</a></br>
+<a href="http://www.souhu.com" target="_blank">链接到搜狐</a><br>
+<a href="http://www.souhu.com" target="_blank">链接到搜狐</a><br>
+</body>
+</html>

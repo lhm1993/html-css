@@ -1,0 +1,39 @@
+*{
+   margin:0px;
+   padding:0px;
+}
+.div1{
+   width:70px;
+   height:30px;
+   background:silver;
+   float:left;
+   margin-left:5px;
+}
+
+#spe{
+  /* position:relative;
+  
+   这里的左右是相对于其原来的位置而言的
+   */
+   position: fixed;/*relative;absolute;*/
+   /* 
+   将内容2包含在新的div中后，
+   内容2的绝对位置和相对位置都发生了改变，
+   无论是改变绝对位置还是相对位置，都是按照新的div块
+   的左上角左边而言的，也就是坐标基点发生了变化，
+   变化
+   fixed 就是不管有谁包着，
+   都是以body页面左上角为坐标基准而言的。
+   */
+   left:200px;  /*left为正，则向右移动*/
+   top:200px; /*top为正则向下移动*/
+}
+.div2{
+   position:relative;
+   left:100px;
+   top:100px;
+   width:400px;
+   height:100px;
+   background:pink;
+   float:left;
+}
